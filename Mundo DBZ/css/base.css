@@ -86,6 +86,10 @@ main > div > h1 {
   font-size: 16px;
 }
 
+.indent{
+  text-indent: 30px;
+}
+
 footer {
   background-color: #e55e2e;
   padding: 10px;
