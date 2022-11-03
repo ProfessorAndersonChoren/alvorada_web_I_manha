@@ -12,6 +12,22 @@
   font-family: "Raleway", sans-serif;
 }
 
+main {
+  margin: 0 auto;
+  width: 95vw;
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #e55e2e;
+  padding: 10px;
+  margin-top: 20px;
+}
+
 /* Identificadores e classes */
 section#menu {
   background-color: #e55e2e;
@@ -69,7 +85,6 @@ header > nav > span + span {
 
 main > div {
   background-color: #7fcb07;
-  width: 75vw; /* Cerca de 75% da tela */
   margin: 30px auto; /* Centralizando a div */
   padding: 10px;
   border-radius: 5px;
@@ -81,19 +96,15 @@ main > div > h1 {
   text-align: center;
 }
 
-.card > h2 {
+.card h2 {
   color: #7fcb07;
   font-size: 16px;
 }
 
-.indent{
+.indent {
   text-indent: 30px;
 }
 
-footer {
-  background-color: #e55e2e;
-  padding: 10px;
-}
 footer > p {
   text-align: center;
   color: #ffffff;
