@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -32,18 +32,18 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(4, 140px);
-  column-gap: 90px;
-  padding: 16px;
+  column-gap: 6vw;
+  row-gap: 1.25rem;
+  padding: 1rem;
 }
 
 .card {
-  border-radius: 10px;
-  padding: 8px 20px;
+  border-radius: 0.625rem;
+  padding: .5rem 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card p {
@@ -57,18 +57,50 @@ main {
 }
 
 /* Cor dos cards */
-.light-green{
-    background-color: var(--light-green);
-    color: #FFFFFF;
+.light-green {
+  background-color: var(--light-green);
+  color: #ffffff;
 }
-.orange{
-    background-color: var(--orange);
-    color: #FFFFFF;
+.orange {
+  background-color: var(--orange);
+  color: #ffffff;
+}
+
+.blue {
+  background-color: #4592c4;
+  color: #ffffff;
+}
+.olive {
+  background-color: #739f40;
+  color: #ffffff;
+}
+.yellow {
+  background-color: #f7de3f;
+  color: #ffffff;
+}
+.brown {
+  background-color: #d56723;
+  color: #ffffff;
+}
+
+/* Tablets */
+@media screen and (min-width:768px){
+  html{
+    font-size: 24px;
+  }
+  main{
+    grid-template-columns: repeat(3, auto);
+    column-gap: 70px;
+  }
 }
 
 /* Telas grandes */
 @media screen and (min-width: 992px) {
   html {
-    font-size: 48px;
+    font-size: 32px;
+  }
+  main{
+    grid-template-columns: repeat(4, auto);
+    column-gap: 90px;
   }
 }
