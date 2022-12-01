@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acesso ao sistema</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/verify.js" defer></script>
+  </head>
+  <body class="d-flex align-items-center vh-100">
+    <main
+      class="container w-50 border border-2 border-primary rounded p-4"
+      style="height: 50vh"
+    >
+      <label for="yearOfBorn" class="form-label">Ano de nascimento</label>
+      <input type="number" id="yearOfBorn" class="form-control" />
+      <div class="invalid-feedback" id="divFeedback"></div>
+      <div class="form-check mt-2">
+        <input type="checkbox" id="withMajor" class="form-check-input" />
+        <label for="withMajor" class="form-check-label"
+          >Está acompanhado de um maior de idade?</label
+        >
+      </div>
+      <button class="btn btn-primary mt-4" id="btnVerify">Verificar</button>
+    </main>
+  </body>
+</html>
