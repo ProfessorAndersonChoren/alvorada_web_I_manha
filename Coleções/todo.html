@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/todo.js" defer></script>
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <main class="w-25 h-50 p-4 rounded border border-2 border-primary">
+        <input type="text" id="inputTask" class="form-control">
+        <button id="btnAddTask" class="btn btn-primary mt-2">Adicionar</button>
+        <div id="tasksList" class="mt-4"></div>
+        <p class="text-primary fw-bold">
+            Total de tarefas:
+            <span id="numberOfTasks">0</span>
+        </p>
+    </main>
+</body>
+</html>
